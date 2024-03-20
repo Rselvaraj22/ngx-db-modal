@@ -1,0 +1,52 @@
+{
+  "name": "ngx-db-modal",
+  "version": "0.0.1",
+  "description": "Open modal window (dialog box) for your angular applications using bootstrap3.",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "private": false,
+  "author": {
+    "name": "Rk",
+    "email": "ranjithus86@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rselvaraj22/ngx-db-modal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rselvaraj22/ngx-db-modal/issues"
+  },
+  "scripts": {
+    "transpile": "ngc",
+    "package": "rollup -c",
+    "minify": "uglifyjs dist/bundles/ngx-db-modal.umd.js --compress --mangle --comments --output dist/bundles/ngx-db-modal.umd.min.js",
+    "build": "npm run transpile && npm run package && npm run minify"
+  },
+  "tags": [
+    "modal",
+    "angular",
+    "typescript",
+    "angular-modal"
+  ],
+  "peerDependencies": {
+    "@angular/core": "17.1.0",
+    "@angular/router": "17.1.0"
+  },
+  "devDependencies": {
+    "@angular/common": "17.1.0",
+    "@angular/compiler": "17.1.0",
+    "@angular/compiler-cli": "17.1.0",
+    "@angular/core": "17.1.0",
+    "@angular/router": "17.1.0",
+    "@types/node": "16.0.0",
+    "bootstrap": "3.3.7",
+    "es6-shim": "0.35.2",
+    "reflect-metadata": "0.1.13",
+    "rollup": "2.0.0",
+    "rxjs": "^6.5.3",
+    "tslint": "6.1.0",
+    "typescript": "5.2",
+    "uglify-js": "3.13.0",
+    "zone.js": "^0.14.0" 
+  }
+}
